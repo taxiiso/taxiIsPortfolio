@@ -1,0 +1,830 @@
+/*
+Theme Name: MY Them
+Author: Forest Studio
+Description: This is my original theme.
+Version: 1.0
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro','sans-serif';
+  background-color: #FFFFEF;
+}
+
+h1 {
+  font-size: 38px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* リンク */
+a {
+  color: #b77d3c;
+}
+
+a:hover {
+  color: #ff8800;
+}
+
+a img {
+  border: none;
+}
+
+/* 記事 */
+article {
+  background-color: #ffffff;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #aaaaaa;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 1px 1px 3px #aaaaaa;
+  box-shadow: 1px 1px 3px #aaaaaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* 記事の付加情報 */
+.postinfo {
+  font-size: smaller;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.postinfo time {
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #bdbc8f;
+  border-radius: 10px;
+  padding: 2px 20px 2px 20px;
+}
+
+/* 本文中の画像 */
+.aligncenter img {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignleft img{
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+.alignright img{
+  float: right;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+figcaption {
+  text-align: center;
+  color: #666666;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 前後のページのリンク */
+.navlink {
+  font-size: 14px;
+  border-top: 1px solid #cccccc;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  clear: both;
+  overflow: hidden;
+}
+
+.navlink i {
+  font-size: 50px;
+  color: #B3B3FF;
+  vertical-align: middle;
+}
+
+.navlink a {
+  width: 50%;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navlink-prev a {
+  float: left;
+  text-align: left;
+}
+
+.navlink-next a {
+  float: right;
+  text-align: right;
+}
+
+.navlink a:hover {
+  color: #000000;
+}
+
+.navlink a:hover i {
+  color: #ff8800;
+}
+
+/* コメント投稿フォーム */
+#respond {
+  background-color: #edede3;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#respond h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#respond .comment-notes,
+#respond .logged-in-as {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#respond .required {
+  color: red;
+}
+
+#respond textarea {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 3px;
+  font-size: 16px;
+}
+
+#respond input {
+  width: 500px;
+}
+
+#respond textarea {
+  width: 700px;
+  height: 120px;
+}
+
+#respond input[type="submit"] {
+  width: 200px;
+  background-color: #fa0;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* コメントのデザイン */
+#comments {
+  background-color: #e4e4b9;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+#comments h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comments article {
+  width: auto;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: 0;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  overflow: visible;
+  border-top: solid 1px #ffffff;
+  padding-top: 20px;
+}
+
+#comments a {
+  text-decoration: none;
+}
+
+.comment-meta {
+  font-size: 12px;
+}
+
+.avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-content {
+  font-size: 14px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-left: 40px;
+  margin-right: 140px;
+}
+
+.reply {
+  text-align: right;
+  font-size: 12px;
+}
+
+.children {
+  margin-left: 40px;
+}
+
+/* 記事の一覧 */
+.list {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-title {
+  margin-bottom: 10px;
+}
+
+.list-title span {
+  font-weight: normal;
+  font-size: 20px;
+  vertical-align: 5px;
+}
+
+.list article {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.list article a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.list article a:hover{
+  background-color: #ffe792;
+  color: #000000;
+  text-decoration: none;
+}
+
+.list article h1 {
+  font-size 24px;
+}
+
+.list .postinfo {
+  border: none;
+  margin:0;
+  padding: 0;
+}
+
+.list article img {
+  float: left;
+  margin-right: 20px;
+}
+
+.list > p {
+  color: #666666;
+  margin-top: -12px;
+}
+
+/* 記事が属するカテゴリーとタグ */
+.postinfo span {
+  margin-left: 30px;
+}
+
+.postinfo i {
+  color: #bdbc8f;
+}
+
+.postinfo a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: solid 1px #aaaaaa;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 1px 7px #aaaaaa;
+  box-shadow: 0 1px 7px #aaaaaa;
+  padding: 5px;
+  zoom: 1;
+  }
+
+header h1 {
+  font-family: 'chango', cursive;
+  font-size: 24px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header h1 a:hover{
+  color: #000000;
+}
+
+header h1 img {
+  vertical-align: -10px;
+  margin-right: 5px;
+}
+
+/* フッター */
+footer {
+  color: #ffffff;
+  background-color: #2f2e0a;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  clear: both;
+}
+
+#comments footer {
+  color: #000000;
+  background: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  clear: both;
+}
+
+/* 3段組み */
+.columns {
+  width: 900px;
+  margin: auto;
+}
+
+.col {
+  width: 280px;
+  float: left;
+  margin-right: 30px;
+}
+
+.col:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.col03 {
+  margin-right: 0;
+}
+
+/* ウィジェット */
+footer aside {
+  margin-bottom: 30px;
+}
+
+footer aside h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer aside ul {
+  list-style-image: url(listmark.png);
+  padding-left: 20px;
+}
+
+footer aside ul.children {
+  list-style-image: url(listmark-small.png);
+  margin-left: 0;
+  font-size: smaller;
+}
+
+footer aside a {
+  text-decoration: none;
+}
+
+footer .screen-reader-text {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .search-field {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer .search-submit {
+  display: none;
+}
+
+/* 記事：大パーツ */
+.list .post-large {
+  border-radius: 0;
+}
+
+.list .post-large img {
+  width: 550px;
+  height: auto;
+}
+
+.list .post-large h1 {
+  background-color: #333333;
+  color: #ffffff;
+  margin-left: 570px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+  font-size: 32px;
+}
+
+.list .post-large p {
+  font-size: 18px;
+}
+
+/* 記事：少パーツ */
+.list .post-small {
+  width: auto;
+}
+
+.list .post-small a {
+  height: 340px;
+}
+
+.list .post-small img {
+  float: none;
+}
+
+.list .post-small h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.list .post-small p {
+  font-size: 12px;
+}
+
+/* 検索結果ページ */
+.noresult {
+  border: solid 1px #aaaaaa;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.noresult .screen-reader-text {
+  display: none;
+}
+
+.noresult .search-field {
+  width: 300px;
+  border: none;
+  padding: 10px;
+}
+
+.noresult .search-submit {
+  display: none;
+}
+
+#content {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content article {
+  width: auto;
+}
+
+#content textarea {
+  width: 500px;
+}
+
+/* 表組み */
+table,
+th,
+td {
+  border: solid 1px #aaaaaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+th {
+  width: 100px;
+  background-color: #B3B3FF;
+  text-align: left;
+  color: #ffffff;
+}
+
+td {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* お問合せフォーム */
+#content .wpcf7 {
+  margin-top: 40px;
+}
+
+#content input,
+textarea {
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  padding: 3px;
+  font-size: 16px;
+}
+#content input {
+  width: 400px;
+}
+
+#content textarea {
+  width: 500px;
+  height: 150px;
+}
+
+#content input[type="submit"]{
+  width: 200px;
+  color: #ffffff;
+  background-color: #B3B3FF;
+  border: solid 1px #cccccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+nav li {
+  display: inline;
+  font-size: 12px;
+  border-right: solid 1px #aaaaaa;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav li:first-child {
+  border-left: solid 1px #aaaaaa;
+}
+
+nav {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  margin-top: -27px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* ビジネス系サイトのトップページ */
+.message {
+  background-color: #c39f4a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.message h1,
+.message p {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.Shadow(
+    Color = #000000,
+    Strength = 5,
+    Direction = 135);
+  text-shadow: 0 5px 10px #000000;
+}
+
+.message h1 {
+  font-size: 60px;
+  font-family: 'Chango', cursive;
+}
+
+.message p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home header {
+  margin-bottom: 0;
+}
+
+.home footer {
+  margin-top: 0;
+}
+
+/* お知らせと四季の記録 */
+.pickup-title {
+  background-color: #B3B3FF;
+  /* background-color: #2f2e0a; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  clear: both;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.pickup a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pickup a:hover {
+  color: #cc8800;
+}
+
+.pickup-title a {
+  color: #ffffff;
+}
+
+.pickup-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  min-height: 180px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.pickup-image {
+  width: 28%;
+  float: left;
+  text-align: center;
+}
+
+.pickup-image img {
+ width: 180px;
+ border: solid 2px #aaaaaa;
+ border-radius: 50%
+}
+
+.pickup-sentence {
+  width: 68%;
+  float: right;
+}
+
+.pickup-sentence p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 「ABOUT STUDIO」 */
+.pickup-studio {
+  margin-bottom: 30px;
+  clear: both;
+  overflow: hidden;
+}
+
+.pickup-studio .pickup-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.pickup-studio article {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.pickup-studio .post-small a {
+  height: auto;
+}
+
+/* PCスキル */
+.skill-first {
+  width: 48%;
+  float: left;
+}
+
+.skill-second {
+  width: 48%;
+  float: right;
+}
+
+.pickup-skill {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.pickup-skill p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.graph {
+    position: relative; /* IE is dumb */
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #207870;
+    padding: 2px;
+    font-size: 12px;
+
+}
+
+.graph .bar {
+    display: block;
+    position: relative;
+    background: #409890;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+.graph .bar span {
+   position: absolute;
+   left: 1em;
+   }
+
+/* CONTACT */
+.icon-box {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.mail-icon {
+  width: 48%;
+  float: left;
+}
+
+.twitter-icon {
+  width: 48%;
+  float: right;
+}
+
+.icon-box i {
+  font-size: 130px;
+  color: #ffffff;
+  background-color: #1EA1F2;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.icon-box i:hover {
+  background-color: #D91DF2;
+}
